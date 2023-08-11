@@ -33,6 +33,20 @@
 
     </TextView>
 
+    <TextView
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/pink_card"
+        app:layout_constraintStart_toStartOf="@+id/pink_card"
+        android:textColor="#FFF"
+        android:id="@+id/sos_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="This is made for krishna and guru,all gloreis to srila prabhupada"
+        app:layout_constraintTop_toBottomOf="@+id/sos_text"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/green_card"
         android:layout_width="match_parent"
@@ -56,5 +70,19 @@
         app:layout_constraintStart_toStartOf="@+id/green_card"
         app:layout_constraintTop_toTopOf="@+id/green_card"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/green_card"
+        app:layout_constraintStart_toStartOf="@+id/green_card"
+        android:textColor="#FFF"
+        android:id="@+id/lecture_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="This is made for krishna and guru,all gloreis to srila prabhupada"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_text"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
