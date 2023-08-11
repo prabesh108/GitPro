@@ -5,12 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-<com.google.android.material.card.MaterialCardView
-    android:layout_width="match_parent"
-    android:layout_height="180dp"
-    app:cardBackgroundColor="#f0737b"
-    tools:ignore="MissingConstraints"
-    app:layout_constraintTop_toTopOf="parent"
-    />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/pink_card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#f0737b"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/green_card"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="#63d2c8"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/pink_card"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
