@@ -25,27 +25,38 @@
         android:elevation="8dp"
         android:text="SOS"
         android:textColor="#FFFF"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/pink_card"
         app:layout_constraintTop_toTopOf="@+id/pink_card"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"></TextView>
 
-    </TextView>
 
     <TextView
-        android:layout_margin="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/pink_card"
-        app:layout_constraintStart_toStartOf="@+id/pink_card"
-        android:textColor="#FFF"
         android:id="@+id/sos_msg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="This is made for krishna and guru,all gloreis to srila prabhupada"
+        android:layout_margin="16dp"
+        android:text="This is made for krishna hare krishna hare krishna krishna hare hare and guru,all gloreis to srila prabhupada"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="@+id/pink_card"
+        app:layout_constraintEnd_toStartOf="@id/sos_img"
+        app:layout_constraintStart_toStartOf="@+id/pink_card"
         app:layout_constraintTop_toBottomOf="@+id/sos_text"
         tools:ignore="MissingConstraints">
 
     </TextView>
+
+    <ImageView
+        android:id="@+id/sos_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+        android:src="@drawable/ic_krishna"
+        app:layout_constraintBottom_toBottomOf="@+id/pink_card"
+        app:layout_constraintEnd_toEndOf="@id/pink_card"
+        app:layout_constraintTop_toTopOf="@id/pink_card"></ImageView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/green_card"
@@ -72,17 +83,28 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:layout_margin="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/green_card"
-        app:layout_constraintStart_toStartOf="@+id/green_card"
-        android:textColor="#FFF"
         android:id="@+id/lecture_msg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:text="This is made for krishna and guru,all gloreis to srila prabhupada"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toStartOf="@id/lecture_img"
+        app:layout_constraintStart_toStartOf="@+id/green_card"
         app:layout_constraintTop_toBottomOf="@+id/lecture_text"
         tools:ignore="MissingConstraints">
 
     </TextView>
+
+    <ImageView
+        android:id="@+id/lecture_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+        android:src="@drawable/ic_krishna"
+        app:layout_constraintBottom_toBottomOf="@+id/green_card"
+        app:layout_constraintEnd_toEndOf="@id/green_card"
+        app:layout_constraintTop_toTopOf="@id/green_card"></ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
